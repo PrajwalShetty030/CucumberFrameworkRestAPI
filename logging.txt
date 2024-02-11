@@ -1,0 +1,115 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 50,
+    "name": "Prajwal",
+    "phone_number": "9740898398",
+    "address": "Mangalore",
+    "website": "test@test.test",
+    "language": "English",
+    "location": {
+        "lat": 33.3232,
+        "lng": -32.323
+    },
+    "types": [
+        "shoe park",
+        "car park"
+    ]
+}
+HTTP/1.1 200 OK
+Date: Sun, 11 Feb 2024 11:43:54 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "6efc8b1f695434063fff932147ddc280",
+    "scope": "APP",
+    "reference": "ed6b7ad42460aaefc42c758b01401393ed6b7ad42460aaefc42c758b01401393",
+    "id": "ed6b7ad42460aaefc42c758b01401393"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=6efc8b1f695434063fff932147ddc280
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=6efc8b1f695434063fff932147ddc280
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 11 Feb 2024 11:43:57 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 217
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "33.3232",
+        "longitude": "-32.323"
+    },
+    "accuracy": "50",
+    "name": "Prajwal",
+    "phone_number": "9740898398",
+    "address": "Mangalore",
+    "types": "shoe park,car park",
+    "website": "test@test.test",
+    "language": "English"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "6efc8b1f695434063fff932147ddc280"
+}
+HTTP/1.1 200 OK
+Date: Sun, 11 Feb 2024 11:43:58 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}
